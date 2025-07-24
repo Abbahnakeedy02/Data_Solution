@@ -4,6 +4,210 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="data solution.css">
+    <style>
+        /*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  color: hsl(303, 63%, 17%);
+  background-color: #e2bdf5;
+  height: 100vh;
+}
+
+header {
+  font-family: "Open Sans", sans-serif;
+  background-color: blueviolet;
+  color: hsl(0, 0%, 96%);
+  text-align: center;
+  padding: 5px;
+}
+#navigation {
+  display: inline-block;
+}
+#navigation button{
+  background-color: #9C67B6;
+  color: #ffffff;
+  margin: 0px;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+  font-size: 20px;
+  width: unset;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 0px;
+  align-content: start;
+}
+#navigation a{
+  display: block;
+  color: #ca2424;
+  text-decoration: none;
+  padding: 0%;
+  text-align: left;
+
+}
+#navigation .content{
+  display: none;
+  position: absolute;
+  background-color: #9C67B6;
+  min-width: none;
+}
+#navigation:hover .content{
+display: block;
+}
+/*
+nav {
+  line-height: 15px;
+  background-color: #eeeeee;
+  color: rgb(179, 159, 159);
+  height: 20px;
+  width: 50px;
+  float: left;
+  padding: 0px
+}
+--------------------------------------------------------------
+# BOX
+--------------------------------------------------------------*/
+#main {
+  margin-top: 60px;
+  padding: 20px 30px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+  #main {
+    padding: 20px;
+  }
+}
+
+.centerlog {
+  padding: auto;
+  width: 300px;
+  height: auto;
+  display: block;
+  justify-content: center;
+  box-shadow: 0 1px 5px;
+  box-shadow: inset;
+  padding-inline: 10px;
+  background: hsl(310, 29%, 73%);
+  padding-bottom: 10px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+/*--------------------------------------------------------------
+# Images
+--------------------------------------------------------------*/
+img {
+  mask-border: 50px;
+  border-radius: 3px;
+  border: none;
+  padding: 1px;
+  margin-bottom: 1px;
+}
+.logo {
+  text-align: center;
+}
+/*--------------------------------------------------------------
+# LINK
+--------------------------------------------------------------*/
+a {
+  color: hsl(303, 63%, 17%);
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: hsl(303, 63%, 12%);
+  margin-bottom: 10px;
+  text-align: center;
+}
+/*--------------------------------------------------------------
+# Pragraph
+--------------------------------------------------------------*/
+p {
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  color: hsl(303, 63%, 17%);
+}
+/*--------------------------------------------------------------
+# All Input
+--------------------------------------------------------------*/
+input, select {
+  border: 1px solid hsl(303, 63%, 17%);;
+  background-color: hsl(310, 29%, 73%);;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  width: 90%;
+}
+input[type="text"]:active{
+  border: none;
+}
+/*
+input[type="email"] {
+border: 1px solid black;
+}*/
+
+/*--------------------------------------------------------------
+# All Button
+--------------------------------------------------------------*/
+button {
+  color: white;
+  background-color: hsl(303, 63%, 17%);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  background-color: hsl(303, 63%, 12%);
+  cursor: pointer;
+}
+/*--------------------------------------------------------------
+# All Dashboard Buttom
+--------------------------------------------------------------*/
+.sticker {
+  padding-bottom: 10px;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+}
+/*--------------------------------------------------------------
+# All Services
+--------------------------------------------------------------*/
+.services {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.button {
+  padding-inline: 10;
+  color: #CEA5C7;
+  background: #9C67B6;
+  text-align: center;
+}
+    </style>
 </head>
 
 <body>
